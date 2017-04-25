@@ -132,7 +132,7 @@
 
 footer {
   color: #666;
-  padding-top: 30vh;
+  padding-top: 20vh;
   font-size: 16px !important;
 }
 
@@ -165,6 +165,13 @@ footer p{
 
 .brand-tagline {
   font-size: 26px !important;
+}
+.nav {
+  padding: 15px 0 0 0;
+  height: 80px;
+}
+.navbar-brand {
+  margin-top: 15px !important;
 }
 
 /* smaller screens */
