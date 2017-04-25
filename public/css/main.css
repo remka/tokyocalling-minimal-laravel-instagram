@@ -174,6 +174,22 @@ footer p{
   margin-top: 15px !important;
 }
 
+.sort-list {
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.7em;
+}
+
+.sort-list.active {
+  background: #ff3300;
+  color: #000;
+}
+
 /* smaller screens */
 @media (max-width: 1000px) {
   .instagram-list li {
