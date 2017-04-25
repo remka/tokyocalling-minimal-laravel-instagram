@@ -40,27 +40,10 @@ $( document ).ready(function() {
 
     var sortType = $(this).attr('data-type');
 
+    // http://trentrichardson.com/2013/12/16/sort-dom-elements-jquery/
+
     var $items = $('ul.instagram-list'),
 	      $itemsLi = $items.children('li');
-
-    console.log('Sorting by ' + sortType + '...');
-
-    /*
-    switch(sortType) {
-      case 'date':
-        var an = a.getAttribute('data-created'),
-            bn = b.getAttribute('data-created');
-      break;
-      case 'likes':
-        var an = a.getAttribute('data-likes'),
-            bn = b.getAttribute('data-likes');
-      break;
-      case 'comments':
-        var an = a.getAttribute('data-comments'),
-            bn = b.getAttribute('data-comments');
-      break;
-    };
-    */
 
     $itemsLi.sort(function(a,b){
       switch(sortType) {
@@ -90,6 +73,7 @@ $( document ).ready(function() {
 
     $('.sort-list').removeClass('active');
     $(this).addClass('active');
+
     e.preventDefault();
   });
 
@@ -107,6 +91,15 @@ $( document ).ready(function() {
   // Closes the Responsive Menu on Menu Item Click
   $('.navbar-collapse ul li a').click(function() {
       $(".navbar-collapse").collapse('hide');
+  });
+
+  $('.date-post').each(function(index) {
+    var timestamp = parseInt($(this).text());
+    var newDate = new Date(timestamp * 1000);
+    var year = newDate.getFullYear();
+    var month = newDate.getMonth()+1;
+    var day = newDate.getDate();
+    $(this).text(year + '/' + month + '/' + day);
   });
 
 });

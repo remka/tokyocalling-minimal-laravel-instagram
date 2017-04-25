@@ -66,7 +66,8 @@
                   <a href="{{$item['link']}}" target="_blank" class="openImage">
                     <img src="{{$item['images']['standard_resolution']['url']}}" alt="Image #{{$item['id']}}" />
                     <div class="stats">
-                      <i class="fa fa-heart" aria-hidden="true"></i> {{$item['likes']['count']}}
+                      <span class="date-post">{{$item['created_time']}}</span>
+                      <i class="fa fa-heart" aria-hidden="true"></i> {{$item['likes']['count']}} &nbsp;
                       <i class="fa fa-comment" aria-hidden="true"></i> {{$item['comments']['count']}}
                     </div>
                   </a>

@@ -190,6 +190,10 @@ footer p{
   color: #000;
 }
 
+.date-post {
+  float: right;
+}
+
 /* smaller screens */
 @media (max-width: 1000px) {
   .instagram-list li {
