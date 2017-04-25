@@ -58,7 +58,7 @@
             <ul class="instagram-list">
               @foreach ($items as $item)
                 <li>
-                  <a href="{{$item['link']}}" title="Image #{{$item['id']}}" target="_blank">
+                  <a href="{{$item['link']}}" target="_blank" class="openImage">
                     <img src="{{$item['images']['standard_resolution']['url']}}" alt="Image #{{$item['id']}}" />
                     <div class="stats">
                       <i class="fa fa-heart" aria-hidden="true"></i> {{$item['likes']['count']}}

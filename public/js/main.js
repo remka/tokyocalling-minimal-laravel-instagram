@@ -9,6 +9,11 @@ $( document ).ready(function() {
      maxFont : 40,
   });
 
+  $('.openImage').click(function(e) {
+    console.log('do stuff!');
+    e.preventDefault;
+  });
+
   $('.hitHeart').click(function(e) {
     counter += 1;
     console.log(counter);
