@@ -15,12 +15,11 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-8 col-md-offset-2">
-                      <h1 class="brand-heading">#stickers</h1>
-                      <p class="intro-text">Stickers from the streets of Tokyo.
-                          <br>Send your pics at <a href="mailto:hello@tokyocalling.jp">hello@tokyocalling.jp</a></p>
-                      <a href="#about" class="btn btn-circle page-scroll">
-                          <i class="fa fa-angle-double-down animated"></i>
-                      </a>
+                    <h1 class="brand-heading">#stickers</h1>
+                    <p class="brand-tagline">Stickers from the streets of Tokyo.
+                      <br>Send your pics at <a href="mailto:hello@tokyocalling.jp">hello@tokyocalling.jp</a>
+                    </p>
+                    <a href="#about" class="btn btn-default btn-lg page-scroll">Mgnn... What?</a>
                   </div>
               </div>
           </div>
@@ -37,7 +36,7 @@
                 We are trying to draw a portrait of this unique city trough the art as seen its streets.
               </p>
               <p>The name of the project is a reference to the 1979 <a href="http://en.wikipedia.org/wiki/London_Calling">album</a> of The Clash.</p>
-              <a href="#latest" class="btn btn-default btn-lg page-scroll" target="_blank">OK, Show me.</a>
+              <a href="#latest" class="btn btn-default btn-lg page-scroll">OK, Show me.</a>
           </div>
       </div>
   </section>
