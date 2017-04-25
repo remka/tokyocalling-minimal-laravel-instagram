@@ -99,14 +99,9 @@
             async>
           </script>
           <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-          <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+          <?php /* <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> */ ?>
           <script
             src="//use.fontawesome.com/58408161fb.js"
-            crossorigin="anonymous"
-            async>
-          </script>
-          <script
-            src="/js/lib/grayscale.js"
             crossorigin="anonymous"
             async>
           </script>
