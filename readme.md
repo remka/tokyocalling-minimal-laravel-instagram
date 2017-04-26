@@ -1,8 +1,6 @@
+# Tokyo Calling
 
-<p align="center">This is the source code for the new, simpler version version of Tokyo Calling.</p>
-
-<p>http://tokyocalling.jp/</p>
-[Simple, fast routing engine](https://laravel.com/docs/routing)
+This is the source code for the new, simpler version version of Tokyo Calling.
 
 ## About Tokyo Calling
 
