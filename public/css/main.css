@@ -30,6 +30,13 @@
   height: 0;
 }
 
+.nav a {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 /* instagram list */
 
 .instagram-list {
@@ -140,7 +147,8 @@ footer p{
   font-size: 16px !important;
 }
 
-.btn {
+.btn,
+.btn:active {
   border-radius: 50px;
   padding: 25px 50px;
   background: transparent;
@@ -149,6 +157,10 @@ footer p{
   margin-top: 2em;
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
 }
 .btn:hover {
   background: #fff;

@@ -19,7 +19,7 @@
                     <p class="brand-tagline">Stickers from the streets of Tokyo.
                       <br>Send your pics at <a href="mailto:hello@tokyocalling.jp">hello@tokyocalling.jp</a>
                     </p>
-                    <a href="#about" class="btn btn-default btn-lg page-scroll">Mgnn... What?</a>
+                    <a href="#about" class="btn btn-default btn-lg page-scroll">Tokyo Calling?</a>
                   </div>
               </div>
           </div>
@@ -32,10 +32,12 @@
           <div class="col-lg-8 col-lg-offset-2">
               <h2>What?</h2>
               <p>
-                Tokyo is a eclectic mix of thriving underground cultures, and a remarkable place when it comes to <a href="http://en.wikipedia.org/wiki/Street_art">street art</a> in general, and stickers in particular.<br />
-                We are trying to draw a portrait of this unique city trough the art as seen its streets.
+                Tokyo is a vibrant city, and an eclectic mix of thriving underground cultures.<br />
+                Maybe for this reason, its walls attract a massive amount of colorful stickers, from Japan and the rest of the world.
+                Tokyo Calling is an attempt to document these.<br />
+                We are open to contribution, <a href="#contact" class="page-scroll">drop us a line</a> if you have some pictures you want to share.
               </p>
-              <p>The name of the project is a reference to the 1979 <a href="http://en.wikipedia.org/wiki/London_Calling">album</a> of The Clash.</p>
+              <p>The name of the project is a clumsy reference to the 1979 <a href="http://en.wikipedia.org/wiki/London_Calling" title="London Calling">Clash album</a>.</p>
               <a href="#latest" class="btn btn-default btn-lg page-scroll">OK, Show me.</a>
           </div>
       </div>

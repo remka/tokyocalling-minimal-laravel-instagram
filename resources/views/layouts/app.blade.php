@@ -16,6 +16,7 @@
       <!-- <link href="css/lib/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
       <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
       <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet" type="text/css">
 
       <link rel="stylesheet" href="css/lib/grayscale.css">
       <link rel="stylesheet" href="css/main.css">
