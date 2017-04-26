@@ -6,7 +6,7 @@
 
 ## About Tokyo Calling
 
-Stickers from the streets of Tokyo.
+Stickers from the streets of Tokyo.  
 The site should be live at [tokyocalling.jp](http://tokyocalling.jp).
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
