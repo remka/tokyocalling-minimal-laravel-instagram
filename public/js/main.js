@@ -10,7 +10,89 @@ var collapseNavbar = function () {
   } else {
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
   }
-}
+};
+
+var updateSortArrows = function() {
+  if(sortOrder == 'desc') {
+    $('.sort-list').removeClass('down').addClass('up');
+  } else {
+    $('.sort-list').removeClass('up').addClass('down');
+  }
+};
+
+var sortList = function(list, items, type, order) {
+
+  // http://trentrichardson.com/2013/12/16/sort-dom-elements-jquery/
+  // T0D0: refactor!
+
+  if(order == 'desc') {
+
+    //console.log('Sorting ASC');
+
+    list.sort(function(a,b){
+
+      switch(type) {
+        case 'date':
+          var an = parseInt(a.getAttribute('data-created')),
+              bn = parseInt(b.getAttribute('data-created'));
+        break;
+        case 'likes':
+          var an = parseInt(a.getAttribute('data-likes')),
+              bn = parseInt(b.getAttribute('data-likes'));
+        break;
+        case 'comments':
+          var an = parseInt(a.getAttribute('data-comments')),
+              bn = parseInt(b.getAttribute('data-comments'));
+        break;
+      };
+      if(an > bn) {
+        return -1;
+      }
+      if(an < bn) {
+        return 1;
+      }
+      return 0;
+    });
+
+    sortOrder = 'asc';
+    updateSortArrows();
+
+  } else if (order == 'asc') {
+
+    //console.log('Sorting DESC');
+
+    list.sort(function(a,b){
+
+      switch(type) {
+        case 'date':
+          var an = parseInt(a.getAttribute('data-created')),
+              bn = parseInt(b.getAttribute('data-created'));
+        break;
+        case 'likes':
+          var an = parseInt(a.getAttribute('data-likes')),
+              bn = parseInt(b.getAttribute('data-likes'));
+        break;
+        case 'comments':
+          var an = parseInt(a.getAttribute('data-comments')),
+              bn = parseInt(b.getAttribute('data-comments'));
+        break;
+      };
+      if(an > bn) {
+        return 1;
+      }
+      if(an < bn) {
+        return -1;
+      }
+      return 0;
+    });
+
+    sortOrder = 'desc';
+    updateSortArrows();
+
+  };
+  list.detach().appendTo(items);
+
+};
 
 
 $( document ).ready(function() {
@@ -36,40 +118,15 @@ $( document ).ready(function() {
     e.preventDefault();
   });
 
+  // Sort instagram posts list
   $('.sort-list').click(function(e) {
 
     var sortType = $(this).attr('data-type');
-
-    // http://trentrichardson.com/2013/12/16/sort-dom-elements-jquery/
-
+    var order = sortOrder;
     var $items = $('ul.instagram-list'),
 	      $itemsLi = $items.children('li');
 
-    $itemsLi.sort(function(a,b){
-      switch(sortType) {
-        case 'date':
-          var an = parseInt(a.getAttribute('data-created')),
-              bn = parseInt(b.getAttribute('data-created'));
-        break;
-        case 'likes':
-          var an = parseInt(a.getAttribute('data-likes')),
-              bn = parseInt(b.getAttribute('data-likes'));
-        break;
-        case 'comments':
-          var an = parseInt(a.getAttribute('data-comments')),
-              bn = parseInt(b.getAttribute('data-comments'));
-        break;
-      };
-      if(an > bn) {
-    		return -1;
-    	}
-    	if(an < bn) {
-    		return 1;
-    	}
-    	return 0;
-    });
-
-    $itemsLi.detach().appendTo($items);
+    sortList($itemsLi, $items, sortType, order);
 
     $('.sort-list').removeClass('active');
     $(this).addClass('active');
@@ -93,6 +150,7 @@ $( document ).ready(function() {
       $(".navbar-collapse").collapse('hide');
   });
 
+  // convert timestamp to human-readable date
   $('.date-post').each(function(index) {
     var timestamp = parseInt($(this).text());
     var newDate = new Date(timestamp * 1000);

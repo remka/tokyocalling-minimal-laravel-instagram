@@ -54,9 +54,21 @@
                     Want to contribute? <a href="#contact" class="page-scroll">Click here</a> to contact us.
                   </p>
                   <p>
-                    <a href="#" class="sort-list active" data-type="date">By date</a>
-                    <a href="#" class="sort-list" data-type="likes">By likes</a>
-                    <a href="#" class="sort-list" data-type="comments">By comments</a>
+                    <a href="#" class="sort-list active down" data-type="date">
+                      By date
+                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="sort-list" data-type="likes">
+                      By likes
+                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="sort-list" data-type="comments">
+                      By comments
+                      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </a>
                   </p>
               </div>
           </div>

@@ -197,9 +197,21 @@ footer p{
   font-size: 0.7em;
 }
 
+.sort-list .fa {
+  display: none;
+}
+
 .sort-list.active {
   background: #ff3300;
   color: #000;
+}
+
+.sort-list.active.up .fa-arrow-up {
+  display: inline;
+}
+
+.sort-list.active.down .fa-arrow-down {
+  display: inline;
 }
 
 .date-post {
